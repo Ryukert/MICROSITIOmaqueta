@@ -519,14 +519,45 @@ main:focus { outline: none; }
 .gv-chat-aviso { font-size: .75rem; color: var(--gv-texto-suave); text-align: center; margin: 0 0 .5rem; padding: 0 .75rem; }
 @media (max-width: 575.98px) { .gv-whatsapp-flotante { width: 54px; height: 54px; font-size: 1.7rem; } .gv-chat-ventana { bottom: 68px; } }
 
+/* ---------- Contacto (mismo diseño que el portal del IEPC) ---------- */
+.gv-contacto { background: #f3f9ff; padding: 3.5rem 0; text-align: left; }
+.gv-contacto-item > div:last-child { min-width: 0; overflow-wrap: anywhere; }
+.gv-contacto-caja {
+    height: 100%; padding: 1.5rem; border-radius: 1rem; color: #fff;
+    background: linear-gradient(-25deg, rgba(235, 219, 247, 1) 0%, rgba(212, 212, 212, .97) 20%, rgba(154, 121, 185, 1) 40%);
+}
+@media (min-width: 992px) { .gv-contacto-caja { padding: 3rem; } }
+.gv-contacto-item { display: flex; gap: 1.5rem; margin-bottom: 2rem; }
+.gv-contacto-icono {
+    width: 3.5rem; height: 3.5rem; flex-shrink: 0; border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    background: rgba(255, 255, 255, .15); transition: background .3s;
+}
+.gv-contacto-item:hover .gv-contacto-icono { background: rgba(255, 255, 255, .3); }
+.gv-contacto-icono i { font-size: 1.5rem; color: #fff; }
+.gv-contacto-item h3, .gv-contacto-item h4 { color: #fff; font-size: 1.25rem; font-weight: 700; margin-bottom: .5rem; }
+.gv-contacto-item p { font-size: .95rem; opacity: .8; margin-bottom: .25rem; }
+.gv-contacto-item ul { margin: 0; padding-left: 1.1rem; font-size: .95rem; }
+.gv-contacto-item a { color: #fff; }
+.gv-contacto-titulo { color: #fff; font-size: 1.5rem; font-weight: 700; padding-bottom: 12px; margin-bottom: 30px; border-bottom: 2px solid #004b93; }
+.gv-contacto-buzon { background: #fff; color: #333; padding: 1.5rem; border-radius: 1rem; box-shadow: 0 0 25px rgba(0, 0, 0, .05); }
+@media (min-width: 992px) { .gv-contacto-buzon { padding: 3rem; } }
+.gv-contacto-titulo-buzon { font-size: 1.5rem; font-weight: 700; color: #333; padding-bottom: 12px; margin-bottom: 1.5rem; border-bottom: 2px solid #004b93; }
+.gv-contacto-titulo-buzon span { border-bottom: 2px solid #004b93; padding-bottom: 10px; position: relative; top: 2px; }
+.gv-contacto-buzon label { font-size: 1.05rem; margin-bottom: .35rem; }
+.gv-contacto-buzon .form-control { padding: .875rem 1.25rem; border-radius: .5rem; border-color: rgba(0, 0, 0, .12); }
+.gv-contacto-buzon .form-control:focus { box-shadow: none; border-color: rgb(96, 92, 168); }
+.gv-contacto-enviar {
+    display: inline-flex; align-items: center; gap: .5rem; border: 0; border-radius: 2rem; padding: .85rem 2rem;
+    background: rgb(96, 92, 168); color: #fff; font-size: 1.1rem; transition: background .2s;
+}
+.gv-contacto-enviar:hover { background: #286090; }
+
 /* ---------- Pie de página y «subir» ---------- */
-.gv-pie { background: var(--gv-morado-osc); color: #ece4fb; padding: 2.25rem 0; margin-top: 0; }
+.gv-pie { background: var(--gv-morado-osc); color: #ece4fb; padding: 1.25rem 0; margin-top: 0; }
 .gv-pie a { color: #fff; }
-.gv-pie-titulo { font-weight: 800; color: #fff; font-size: 1.1rem; margin-bottom: .25rem; }
-.gv-redes-pie { justify-content: flex-start; margin-bottom: .75rem; }
-.gv-redes-pie a { color: #fff; font-size: 1.5rem; }
-@media (min-width: 992px) { .gv-redes-pie { justify-content: flex-end; } }
-.gv-pie-portal { font-weight: 700; }
+.gv-redes-pie { justify-content: center; }
+.gv-redes-pie a { color: #fff; font-size: 1.25rem; }
 .gv-subir {
     position: fixed; right: 1rem; bottom: 1rem; z-index: 1035; width: 46px; height: 46px; border-radius: 50%;
     background: var(--gv-morado); color: #fff; display: flex; align-items: center; justify-content: center; font-size: 1.3rem;
@@ -540,7 +571,4 @@ main:focus { outline: none; }
 .gv-logo-pendiente-header i { font-size: 1.2rem; }
 .gv-logo-pendiente-header strong { font-size: .7rem; }
 .gv-logo-pendiente-header span { display: none; }
-.gv-sitios a:has(.gv-logo-pendiente) { height: 100%; text-decoration: none; }
-.gv-logo-pendiente-sitio { aspect-ratio: auto !important; height: 100%; min-height: 120px; border: 0; border-radius: 0; padding: .5rem; font-size: .75rem; }
-.gv-logo-pendiente-sitio i { font-size: 1.4rem; }
 @media (max-width: 1199.98px) { .gv-logo-pendiente-header { width: 128px; } }
