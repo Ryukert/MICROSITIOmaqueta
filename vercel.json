@@ -1,0 +1,11 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "trailingSlash": false,
+  "redirects": [
+    { "source": "/guerreroenelextranjero/index", "destination": "/guerreroenelextranjero", "permanent": true },
+    { "source": "/guerreroenelextranjero/actualizacion", "destination": "/guerreroenelextranjero", "permanent": true },
+    { "source": "/guerreroenelextranjero/credencializate", "destination": "/guerreroenelextranjero#como-votar", "permanent": true },
+    { "source": "/guerreroenelextranjero/marco_normativo", "destination": "/guerreroenelextranjero#mas-informacion", "permanent": true },
+    { "source": "/guerreroenelextranjero/preguntas_frecuentes", "destination": "/guerreroenelextranjero#preguntas-frecuentes", "permanent": true }
+  ]
+}
