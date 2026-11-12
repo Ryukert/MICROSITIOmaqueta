@@ -534,3 +534,8 @@ main:focus { outline: none; }
 }
 .gv-subir.visible { opacity: 1; visibility: visible; }
 .gv-subir:hover { color: #fff; background: var(--gv-rosa); }
+
+/* maqueta: sin logos */
+.gv-logo-texto { display: inline-block; font-family: var(--gv-fuente-titulos); font-weight: 700; font-size: 1.35rem; line-height: 1.1; color: var(--gv-morado-osc); }
+.gv-sitio-nombre { display: flex; align-items: center; justify-content: center; aspect-ratio: 16 / 9; padding: .75rem; text-align: center; font-weight: 700; font-size: .95rem; line-height: 1.25; color: var(--gv-morado-osc); background: var(--gv-lavanda); }
+@media (max-width: 575.98px) { .gv-logo-texto { font-size: 1.1rem; } }
