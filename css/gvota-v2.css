@@ -560,11 +560,13 @@ main:focus { outline: none; }
 }
 .gv-contacto-enviar:hover { background: #286090; }
 
-/* ---------- Pie de página y «subir» ---------- */
-.gv-pie { background: var(--gv-morado-osc); color: #ece4fb; padding: 1.25rem 0; margin-top: 0; }
-.gv-pie a { color: #fff; }
-.gv-redes-pie { justify-content: center; }
-.gv-redes-pie a { color: #fff; font-size: 1.25rem; }
+/* ---------- Barra superior (igual al pie del portal del IEPC) y «subir» ---------- */
+.gv-barra-superior { background: var(--gv-morado-osc); color: #ece4fb; padding: .6rem 0; font-size: .95rem; }
+.gv-barra-superior a { color: #fff; }
+.gv-barra-superior a:hover { color: var(--gv-rosa-claro); }
+.gv-redes-barra { justify-content: center; }
+.gv-redes-barra a { color: #fff; font-size: 1.15rem; }
+.gv-redes-barra a:hover { color: var(--gv-rosa-claro); }
 .gv-subir {
     position: fixed; right: 1rem; bottom: 1rem; z-index: 1035; width: 46px; height: 46px; border-radius: 50%;
     background: var(--gv-morado); color: #fff; display: flex; align-items: center; justify-content: center; font-size: 1.3rem;
