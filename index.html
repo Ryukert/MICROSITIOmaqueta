@@ -24,7 +24,7 @@
     <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="/css/lite-yt-embed.css" rel="stylesheet">
     <link href="/vendor/aos/aos.css" rel="stylesheet">
-    <link href="/css/gvota-v2.css?v=1794596629" rel="stylesheet">
+    <link href="/css/gvota-v2.css?v=1794597214" rel="stylesheet">
 
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-GBTJ8NQR65"></script>
@@ -42,7 +42,16 @@
 <!-- ===================== BARRA SUPERIOR (igual al pie del portal del IEPC) ===================== -->
 <div class="gv-barra-superior">
     <div class="container-xl d-flex flex-column flex-md-row align-items-center justify-content-between gap-1 gap-md-2">
-        <p class="mb-0">IEPC Guerrero - 2026</p>
+        <div class="d-flex flex-wrap align-items-center justify-content-center gap-3">
+            <p class="mb-0">IEPC Guerrero - 2026</p>
+            <!-- Contador de visitas: solo visual en la maqueta (número de ejemplo, no cuenta visitas reales) -->
+            <p class="gv-visitas mb-0" title="Visitas">
+                <i class="bi bi-eye-fill" aria-hidden="true"></i>
+                Visitas:
+                <span class="visually-hidden">12,458</span>
+                <span aria-hidden="true"><span class="gv-visitas-numero">0</span><span class="gv-visitas-numero">1</span><span class="gv-visitas-numero">2</span><span class="gv-visitas-numero">4</span><span class="gv-visitas-numero">5</span><span class="gv-visitas-numero">8</span></span>
+            </p>
+        </div>
         <div class="d-flex flex-wrap align-items-center justify-content-center gap-3">
             <a href="https://www.iepcgro.mx/principal/sitio/directorio" target="_blank" rel="noopener noreferrer">Directorio</a>
             <a href="https://www.iepcgro.mx/principal/transparencia/avisos_privacidad" target="_blank" rel="noopener noreferrer">Avisos de Privacidad</a>
@@ -744,6 +753,23 @@
                             </a></li>
                                             </ul>
                 </div>
+            </div>
+        </div>
+
+        <!-- F. Accesos desde el portal del IEPC (RT-01, RT-02 y RT-03) -->
+        <div class="gv-panel mt-4">
+            <h3 class="gv-panel-titulo">Accesos desde el portal del IEPC</h3>
+            <p class="gv-nota text-center mb-3">Estos elementos se colocan en la página principal del Instituto y enlazan a este micrositio.</p>
+            <div class="row g-4 align-items-end gv-portal-iepc">
+                <figure class="col-lg-6 mb-0">
+                    <div class="gv-pendiente " style="aspect-ratio:1440&#x20;&#x2F;&#x20;500" role="img" aria-label="Imagen&#x20;pendiente&#x3A;&#x20;Banner&#x20;del&#x20;carrusel&#x20;&#x2014;&#x20;1440&#xD7;500&#x20;px&#x20;&#x28;por&#x20;confirmar&#x20;con&#x20;el&#x20;administrador&#x20;del&#x20;portal&#x29;&#x20;&#x2014;&#x20;JPG&#x20;&#x2F;&#x20;WebP"><i class="bi bi-image" aria-hidden="true"></i><strong aria-hidden="true">Imagen pendiente</strong><span aria-hidden="true">Banner del carrusel — 1440×500 px (por confirmar con el administrador del portal) — JPG / WebP</span></div>                    <figcaption><strong>RT-01</strong> · Banner en el carrusel de la página principal</figcaption>
+                </figure>
+                <figure class="col-6 col-lg-3 mb-0">
+                    <div class="gv-pendiente gv-pendiente-mini&#x20;gv-pendiente-110" style="aspect-ratio:1&#x20;&#x2F;&#x20;1" role="img" aria-label="Imagen&#x20;pendiente&#x3A;&#x20;300&#xD7;300&#x20;px,&#x20;se&#x20;muestra&#x20;a&#x20;&#x7E;110&#x20;px&#x20;&#x2014;&#x20;PNG-24&#x20;transparente"><i class="bi bi-image" aria-hidden="true"></i><strong aria-hidden="true">Imagen pendiente</strong><span aria-hidden="true">300×300 px, se muestra a ~110 px — PNG-24 transparente</span></div>                    <figcaption><strong>RT-02</strong> · Botón de acceso directo «Voto en el extranjero»<br><span>300×300 px · PNG-24</span></figcaption>
+                </figure>
+                <figure class="col-6 col-lg-3 mb-0">
+                    <div class="gv-pendiente gv-pendiente-mini&#x20;gv-pendiente-64" style="aspect-ratio:1&#x20;&#x2F;&#x20;1" role="img" aria-label="Imagen&#x20;pendiente&#x3A;&#x20;64&#xD7;64&#x20;px&#x20;o&#x20;vectorial&#x20;&#x2014;&#x20;SVG&#x20;&#x28;preferente&#x29;&#x20;o&#x20;PNG&#x20;transparente"><i class="bi bi-image" aria-hidden="true"></i><strong aria-hidden="true">Imagen pendiente</strong><span aria-hidden="true">64×64 px o vectorial — SVG (preferente) o PNG transparente</span></div>                    <figcaption><strong>RT-03</strong> · Ícono de la opción «Voto en el extranjero» del submenú «Cultura democrática»<br><span>64×64 px · SVG / PNG</span></figcaption>
+                </figure>
             </div>
         </div>
     </div>
