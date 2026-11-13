@@ -95,7 +95,8 @@ main:focus { outline: none; }
         0 3px 8px rgba(52, 17, 107, .16),
         0 14px 40px rgba(52, 17, 107, .30);
 }
-.gv-logo img { height: 52px; width: auto; }
+.gv-logo { flex-shrink: 0; }
+.gv-logo img { height: 52px; width: auto; max-width: none; }
 
 .gv-menu .nav-link {
     font-weight: 700; color: var(--gv-texto); padding: .5rem .85rem !important;
@@ -119,6 +120,12 @@ main:focus { outline: none; }
     box-shadow: 0 4px 12px rgba(122, 63, 224, .35); transition: transform .15s;
 }
 .gv-btn-buscar:hover { transform: scale(1.06); background: var(--gv-morado); }
+
+/* Escritorio: el logo y el menú completo no caben con las redes; éstas siguen en el pie de página */
+@media (min-width: 1200px) {
+    .gv-header .gv-redes { display: none !important; }
+    .gv-menu .nav-link { padding: .5rem .6rem !important; }
+}
 .gv-toggler { border: 2px solid var(--gv-lila); font-size: 1.6rem; color: var(--gv-morado-osc); padding: .1rem .5rem; }
 
 @media (max-width: 1199.98px) {
@@ -565,10 +572,3 @@ main:focus { outline: none; }
 }
 .gv-subir.visible { opacity: 1; visibility: visible; }
 .gv-subir:hover { color: #fff; background: var(--gv-rosa); }
-
-/* maqueta: logos pendientes */
-.gv-logo-pendiente-header { width: 170px; flex-direction: row; gap: .4rem; padding: .25rem .6rem; border-radius: .75rem; }
-.gv-logo-pendiente-header i { font-size: 1.2rem; }
-.gv-logo-pendiente-header strong { font-size: .7rem; }
-.gv-logo-pendiente-header span { display: none; }
-@media (max-width: 1199.98px) { .gv-logo-pendiente-header { width: 128px; } }
