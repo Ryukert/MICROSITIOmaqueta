@@ -24,7 +24,7 @@
     <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="/css/lite-yt-embed.css" rel="stylesheet">
     <link href="/vendor/aos/aos.css" rel="stylesheet">
-    <link href="/css/gvota-v2.css?v=1794598819" rel="stylesheet">
+    <link href="/css/gvota-v2.css?v=1794599300" rel="stylesheet">
 
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-GBTJ8NQR65"></script>
@@ -116,12 +116,25 @@
 
         <div class="collapse navbar-collapse" id="gv-menu-colapsable">
             <ul class="navbar-nav gv-menu mx-xl-auto" id="gv-menu">
-                                    <li class="nav-item"><a class="nav-link" href="#inicio">Home</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="#como-votar">How can I vote?</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="#punto-de-encuentro">Meeting point</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="#preguntas-frecuentes">FAQ</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="#mas-informacion">More information</a></li>
+                                                        <li class="nav-item"><a class="nav-link" href="#inicio">Home</a></li>
+                                                        <li class="nav-item"><a class="nav-link" href="#como-votar">How can I vote?</a></li>
+                                                        <li class="nav-item"><a class="nav-link" href="#punto-de-encuentro">Meeting point</a></li>
+                                                        <li class="nav-item"><a class="nav-link" href="#preguntas-frecuentes">FAQ</a></li>
+                                                            <!-- «Más información» como menú desplegable (mismo estilo que el portal del IEPC) -->
+                        <li class="nav-item dropdown">
+                            <button type="button" class="nav-link dropdown-toggle gv-menu-desplegable" data-bs-toggle="dropdown" aria-expanded="false">
+                                More information <i class="bi bi-chevron-down" aria-hidden="true"></i>
+                            </button>
+                            <ul class="dropdown-menu gv-submenu">
+                                <li><a class="dropdown-item" href="#mas-informacion">
+                                    <i class="bi bi-info-circle" aria-hidden="true"></i> More information                                </a></li>
+                                <li><a class="dropdown-item" href="https://www.votoextranjero.mx/web/vmre/inicio" target="_blank" rel="noopener noreferrer">
+                                    <i class="bi bi-globe-americas" aria-hidden="true"></i> Voting from abroad                                    <i class="bi bi-box-arrow-up-right gv-submenu-externo" aria-hidden="true"></i>
+                                    <span class="visually-hidden">(opens in a new window)</span>
+                                </a></li>
                             </ul>
+                        </li>
+                                    </ul>
         </div>
     </nav>
 </header>
@@ -748,23 +761,6 @@
                 </div>
             </div>
         </div>
-
-        <!-- F. Accesos desde el portal del IEPC (RT-01, RT-02 y RT-03) -->
-        <div class="gv-panel mt-4">
-            <h3 class="gv-panel-titulo">Links from the IEPC website</h3>
-            <p class="gv-nota text-center mb-3">These elements are placed on the Institute&#039;s home page and link to this microsite.</p>
-            <div class="row g-4 align-items-end gv-portal-iepc">
-                <figure class="col-lg-6 mb-0">
-                    <div class="gv-pendiente " style="aspect-ratio:1440&#x20;&#x2F;&#x20;500" role="img" aria-label="Image&#x20;pending&#x3A;&#x20;Banner&#x20;del&#x20;carrusel&#x20;&#x2014;&#x20;1440&#xD7;500&#x20;px&#x20;&#x28;por&#x20;confirmar&#x20;con&#x20;el&#x20;administrador&#x20;del&#x20;portal&#x29;&#x20;&#x2014;&#x20;JPG&#x20;&#x2F;&#x20;WebP"><i class="bi bi-image" aria-hidden="true"></i><strong aria-hidden="true">Image pending</strong><span aria-hidden="true">Banner del carrusel — 1440×500 px (por confirmar con el administrador del portal) — JPG / WebP</span></div>                    <figcaption><strong>RT-01</strong> · Banner in the home page carousel</figcaption>
-                </figure>
-                <figure class="col-6 col-lg-3 mb-0">
-                    <div class="gv-pendiente gv-pendiente-mini&#x20;gv-pendiente-110" style="aspect-ratio:1&#x20;&#x2F;&#x20;1" role="img" aria-label="Image&#x20;pending&#x3A;&#x20;300&#xD7;300&#x20;px,&#x20;se&#x20;muestra&#x20;a&#x20;&#x7E;110&#x20;px&#x20;&#x2014;&#x20;PNG-24&#x20;transparente"><i class="bi bi-image" aria-hidden="true"></i><strong aria-hidden="true">Image pending</strong><span aria-hidden="true">300×300 px, se muestra a ~110 px — PNG-24 transparente</span></div>                    <figcaption><strong>RT-02</strong> · «Vote from abroad» shortcut button<br><span>300×300 px · PNG-24</span></figcaption>
-                </figure>
-                <figure class="col-6 col-lg-3 mb-0">
-                    <div class="gv-pendiente gv-pendiente-mini&#x20;gv-pendiente-64" style="aspect-ratio:1&#x20;&#x2F;&#x20;1" role="img" aria-label="Image&#x20;pending&#x3A;&#x20;64&#xD7;64&#x20;px&#x20;o&#x20;vectorial&#x20;&#x2014;&#x20;SVG&#x20;&#x28;preferente&#x29;&#x20;o&#x20;PNG&#x20;transparente"><i class="bi bi-image" aria-hidden="true"></i><strong aria-hidden="true">Image pending</strong><span aria-hidden="true">64×64 px o vectorial — SVG (preferente) o PNG transparente</span></div>                    <figcaption><strong>RT-03</strong> · Icon for the «Vote from abroad» option in the «Democratic culture» submenu<br><span>64×64 px · SVG / PNG</span></figcaption>
-                </figure>
-            </div>
-        </div>
     </div>
 
     <div class="gv-cintillo">
@@ -1008,6 +1004,6 @@
 <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 <script src="/js/lite-yt-embed.js"></script>
 <script src="/vendor/aos/aos.js"></script>
-<script src="/js/gvota-v2.js?v=1794416941"></script>
+<script src="/js/gvota-v2.js?v=1794599281"></script>
 </body>
 </html>

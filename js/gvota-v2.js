@@ -82,7 +82,7 @@
     alDesplazar();
 
     var colapsable = $('#gv-menu-colapsable');
-    $$('#gv-menu .nav-link').forEach(function (a) {
+    $$('#gv-menu a.nav-link, #gv-menu .dropdown-item').forEach(function (a) {
         a.addEventListener('click', function () {
             if (colapsable && colapsable.classList.contains('show')) {
                 bootstrap.Collapse.getOrCreateInstance(colapsable).hide();
