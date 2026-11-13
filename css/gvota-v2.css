@@ -527,7 +527,7 @@ main:focus { outline: none; }
 @media (max-width: 575.98px) { .gv-whatsapp-flotante { width: 54px; height: 54px; font-size: 1.7rem; } .gv-chat-ventana { bottom: 68px; } }
 
 /* ---------- Contacto (mismo diseño que el portal del IEPC) ---------- */
-.gv-contacto { background: #f3f9ff; padding: 3.5rem 0; text-align: left; }
+.gv-pie-contacto { background: #f3f9ff; padding: 3.5rem 0; }
 .gv-contacto-item > div:last-child { min-width: 0; overflow-wrap: anywhere; }
 .gv-contacto-caja {
     height: 100%; padding: 1.5rem; border-radius: 1rem; color: #fff;
